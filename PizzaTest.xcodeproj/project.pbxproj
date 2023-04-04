@@ -10,6 +10,7 @@
 		3C857B8F29DB3DB6002BA0A1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857B8E29DB3DB6002BA0A1 /* MainTabBarController.swift */; };
 		3C857B9129DB4235002BA0A1 /* MainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857B9029DB4235002BA0A1 /* MainFactory.swift */; };
 		3C857B9329DB4708002BA0A1 /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857B9229DB4708002BA0A1 /* PizzaModel.swift */; };
+		3C857B9629DB5351002BA0A1 /* PizzaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857B9529DB5351002BA0A1 /* PizzaCell.swift */; };
 		3CD5F7E229DB362100957209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5F7E129DB362100957209 /* AppDelegate.swift */; };
 		3CD5F7E429DB362100957209 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5F7E329DB362100957209 /* SceneDelegate.swift */; };
 		3CD5F7E629DB362100957209 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5F7E529DB362100957209 /* MainViewController.swift */; };
@@ -23,6 +24,7 @@
 		3C857B8E29DB3DB6002BA0A1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3C857B9029DB4235002BA0A1 /* MainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFactory.swift; sourceTree = "<group>"; };
 		3C857B9229DB4708002BA0A1 /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		3C857B9529DB5351002BA0A1 /* PizzaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCell.swift; sourceTree = "<group>"; };
 		3CD5F7DE29DB362100957209 /* PizzaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD5F7E129DB362100957209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD5F7E329DB362100957209 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		3C857B9429DB4904002BA0A1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3C857B9529DB5351002BA0A1 /* PizzaCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C857B9629DB5351002BA0A1 /* PizzaCell.swift in Sources */,
 				3CD5F7E629DB362100957209 /* MainViewController.swift in Sources */,
 				3C857B9129DB4235002BA0A1 /* MainFactory.swift in Sources */,
 				3CD5F7E229DB362100957209 /* AppDelegate.swift in Sources */,

@@ -67,14 +67,19 @@ extension MainViewController: MainViewControllerProtocol {
 // MARK: - UITableViewDataSource, UITableViewDelegate
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        180
+//    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "123", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "123", for: indexPath) as! PizzaCell
         let model = menuList[indexPath.row]
-        cell.textLabel?.text = model.name
+        cell.configure(with: model)
         
         return cell
     }
@@ -87,7 +92,10 @@ extension MainViewController {
     private func setupViews() {
         view.backgroundColor = .white
         view.addSubview(menuTableView)
-        menuTableView.register(UITableViewCell.self, forCellReuseIdentifier: "123")
+        menuTableView.register(PizzaCell.self, forCellReuseIdentifier: "123")
+        menuTableView.rowHeight = UITableView.automaticDimension
+        menuTableView.estimatedRowHeight = 180
+        menuTableView.showsVerticalScrollIndicator = false
         
         menuTableView.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20))
