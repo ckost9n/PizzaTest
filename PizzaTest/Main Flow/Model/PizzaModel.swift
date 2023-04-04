@@ -18,21 +18,25 @@ struct PizzaModel {
             PizzaModel(
                 name: "Ветчина и грибы",
                 ingredients: "Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус",
+                image: UIImage(named: "vetAndCheese"),
                 coast: Coast(min: 345, medium: 445, max: 555)
             ),
             PizzaModel(
                 name: "Баварские колбаски",
                 ingredients: "Баварски колбаски,ветчина, пикантная пепперони, острая чоризо, моцарелла, томатный соус",
+                image: UIImage(named: "sausages"),
                 coast: Coast(min: 345, medium: 445, max: 555)
             ),
             PizzaModel(
                 name: "Нежный лосось",
                 ingredients: "Лосось, томаты черри, моцарелла, соус песто",
+                image: UIImage(named: "salmon"),
                 coast: Coast(min: 345, medium: 445, max: 555)
             ),
             PizzaModel(
                 name: "Пицца четыре сыра",
                 ingredients: "Соус Карбонара, Сыр Моцарелла, Сыр Пармезан, Сыр Роккфорти, Сыр Чеддер (тёртый)",
+                image: UIImage(named: "4 cheese"),
                 coast: Coast(min: 345, medium: 445, max: 555)
             )
         ]
